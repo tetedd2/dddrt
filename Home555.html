@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ระบบตรวจโรคพืช</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: white; /* พื้นหลังสีขาว */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 30px 0;
+    }
+
+    /* Container สำหรับปุ่มแนวนอน (ด้านล่าง) */
+    .button-container {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    /* Container สำหรับปุ่มแนวตั้ง (ด้านบน) */
+    .vertical-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 300px;
+    }
+
+    .btn {
+      width: 180px;
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    /* สีปุ่มแนวตั้ง */
+    .btn.durian {
+      background-color: #FFA500; /* เหลือง */
+    }
+
+    .btn.mangosteen {
+      background-color: #800080; /* ม่วง */
+    }
+
+    .btn.tetedd2 {
+      background-color: #008000; /* เขียว */
+    }
+
+    /* สีปุ่มแนวนอน */
+    .btn.home {
+      background-color: #e74c3c; /* แดง */
+    }
+
+    .btn.ai {
+      background-color: #2ecc71; /* เขียว */
+    }
+
+    .btn.plant {
+      background-color: #007bff; /* ฟ้า */
+    }
+
+    .btn.menu {
+      background-color: #ff9900; /* ส้ม */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- กล่องปุ่มแนวตั้ง (ด้านบนของหน้าเว็บ) -->
+  <div class="vertical-buttons">
+   <a href="Home2.html" class="btn ai">วิธีปลูก</a>
+
+  <div class="vertical-buttons">
+   <a href="Home3.html" class="btn ai">ดูแล</a>
+
+    <div class="vertical-buttons">
+   <a href="Home4.html" class="btn ai">ประโยชน์</a>
+  </div>
+
+  <!-- กล่องปุ่มแนวนอน (ด้านล่างของหน้าเว็บ) -->
+  <div class="button-container">
+    <a href="Home999.html" class="btn home">HOME</a>
+    <a href="Home.html" class="btn ai">AI</a>
+    <a href="Home555.html" class="btn plant">วิธีปลูก</a>
+    <a href="menu.html" class="btn menu">MENU</a>
+  </div>
+
+</body>
+</html>
